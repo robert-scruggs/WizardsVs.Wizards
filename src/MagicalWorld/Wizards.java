@@ -33,7 +33,7 @@ public class Wizards {
                 break;
         }
         this.name = name;
-        this.health = 10;
+        this.health = 40;
         this.mana = 20;
     }
     //methods

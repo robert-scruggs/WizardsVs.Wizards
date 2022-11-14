@@ -7,9 +7,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in);
-        Wizards wizard1 = new Wizards("Henry");
-        Wizards wizard2 = new Wizards("Garrett");
-        System.out.println("Entering the Magical World of Atlantis");
+        System.out.print("What's the name of your first wizard? ");
+        String firstWizardName = input.next();
+        System.out.print("What's the name of your second wizard? ");
+        String secondWizardName = input.next();
+        Wizards wizard1 = new Wizards(firstWizardName);
+        Wizards wizard2 = new Wizards(secondWizardName);
+        System.out.println("Entering a Magical World!");
         Thread.sleep(2500);
         System.out.println(wizard1.name + " is a " + wizard1.classOfWizard + " wizard! Congratulations!");
         Thread.sleep(2500);
